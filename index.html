@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/mfpm-web/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minefield Progress Monitor</title>
+    <!-- Mantine color scheme: reads localStorage 'mantine-color-scheme', falls back to OS preference -->
+    <script>
+      (function () {
+        var stored = localStorage.getItem('mantine-color-scheme');
+        var scheme = stored === 'light' || stored === 'dark' ? stored
+          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-mantine-color-scheme', scheme);
+      })();
+    </script>
+    <script type="module" crossorigin src="/mfpm-web/assets/index-DFeESYR-.js"></script>
+    <link rel="stylesheet" crossorigin href="/mfpm-web/assets/index-BObdmjnN.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
